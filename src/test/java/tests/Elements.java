@@ -10,7 +10,7 @@ public class Elements extends BaseTest {
     @Test
     public void amountOfElements() {
         //Open url of  page
-        driver.get(Urls.REGISTER_FORM_URL);
+        driver.get(Urls.ADD_REMOVE_ELEMENTS_URL);
         //Add elements
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
@@ -18,7 +18,7 @@ public class Elements extends BaseTest {
         driver.findElement(By.xpath("//button[@class='added-manually']")).click();
         //Add check
         int amount = driver.findElements(By.xpath("//button[@class='added-manually']")).size();
-        Assert.assertEquals(1,amount, "AmountOfElements is incorrect");
+        Assert.assertEquals(1, amount, "AmountOfElements is incorrect");
 
     }
 
