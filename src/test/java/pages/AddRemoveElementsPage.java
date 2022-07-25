@@ -26,7 +26,7 @@ public class AddRemoveElementsPage extends BasePage {
     }
 
     public int amountOfElements() {
-        int amount = driver.findElements(By.xpath("//button[@class='added-manually']")).size();
+        int amount = driver.findElements(DELETE_BUTTON).size();
         return amount;
     }
 }
